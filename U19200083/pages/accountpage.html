@@ -3,29 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <title>Carzone</title>
-    <link rel="stylesheet" href="accountpage.css">
+    <link rel="stylesheet" href="../pages/css files/accountpage.css">
 </head>
 <body>
-  <header>
-    <img src = "https://github.com/NiazMahmud2001/carzonexd/blob/main/logo.png?raw=true"  width = "120" height = "120" alt = "logo">
-  </header>
-<h3>Sign in </h3>
-<form action="../../U19104721_AhmedOrfahli/Pages/BuyCarPage.html">
-    <label for="us">Email address</label>
-    <br><b></b>
-    <input  id ="us " type="text"   >
-    <br><b></b>
-    <label for="ps">Password</label>
-    <br><b></b>
-    <input  id ="ps" type="password"  >
-      <br> <br>
-    <input type="submit" value="Sign in">
-</form>
+ 
+  <nav>
+    <img src = "https://github.com/NiazMahmud2001/carzonexd/blob/main/logo.png?raw=true"  width = "120" height = "120" alt = "logo" class="logo">
 
-<form action="singup.html">
-  <p><a href="">Forget email </a> | <a href="">Forget password</a></p>
-  <p id ="or">or</p>
-  <input type="submit" value="Create new account">
-</form>
+      <ul >
+          <li><a href="../../index.html">HOME</a></li>
+          <li><a href="">ABOUT US</a></li>
+          <li><a href="">SERVICE</a></li>
+          <li><a href="">CONTACT US</a></li>
+      </ul>
+  </nav>
+
+  <div class=" container">
+      <div class="card">
+      <div class=" innerbox" id="card">
+        <div class="cardfront">
+          <h2>LOGIN</h2>
+          <form action="../../U19104721_AhmedOrfahli/Pages/BuyCarPage.html">
+            <input type="email" class="inputbox" placeholder="Enter your Email id" required >
+            <input type="password" class="inputbox" placeholder="Password" required >
+            <button type="submit" class="sub">Submit</button>
+            <input type="checkbox"> <span >Rmember me</span>
+          </form>
+          <button type="button" class="btn" onclick="openRegister()">I'm new here</button>
+          <a href="">Forgot password</a>
+        </div>
+        <div class="cardback">
+          <h2>REGISTER</h2>
+          <form action="../../U19104721_AhmedOrfahli/Pages/BuyCarPage.html">
+            <input type="text" class="inputbox" placeholder="Your name" required >
+            <input type="email" class="inputbox" placeholder="Enter your Email id" required >
+
+            <input type="password" class="inputbox" placeholder="Password" required >
+
+            <button type="submit" class="sub">Submit</button>
+            <input type="checkbox"> <span >Rmember me</span>
+          </form>
+          <button type="button" class="btn" onclick="openLogin()">I've an account</button>
+          <a href="">Forgot password</a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+
+    var car = document.getElementById("card");
+
+    function openRegister()
+    {
+      card.style.transform = "rotateY(-180deg)";
+    }
+    function openLogin()
+    {
+      card.style.transform = "rotateY(0deg)";
+    }
+    
+
+    </script>
+
 </body>
 </html>
