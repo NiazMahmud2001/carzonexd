@@ -1,0 +1,172 @@
+body
+{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://github.com/NiazMahmud2001/carzonexd/blob/main/4k-car-wallpaper-1.jpg?raw=true);
+    background-size: cover;
+    background-position: center;
+	background-attachment: fixed;
+}
+
+nav
+{
+    width: 85%;
+    margin: auto;
+    padding:15px 0;
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    position: relative;
+    top: -10px;
+
+}
+.logo
+{
+
+    width: 120px;
+    cursor: pointer;
+	border-radius: 20px;
+
+}
+
+nav ul li
+{
+    list-style:none ;
+    display: inline-block;
+    margin: 0 20px;
+    padding: 5px;
+    position: relative;
+}
+nav ul li a
+{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    
+}
+
+nav ul li::after
+{
+    content: '';
+    height:3px ;
+    width: 0%;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.2s;
+}
+nav ul li:hover::after
+{
+    width: 100%;
+}
+
+.text1
+{
+    width: 100%;
+    position: aboslute;
+    top: 100px;
+    transform: translateY(-1%);
+    text-align: center;
+    color: #fff;
+
+}
+
+.text1 form button
+{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span
+{
+    background: #009688;
+    height:100%;
+    width:0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.2s;
+
+}
+button:hover
+{
+    border: none;
+}
+button:hover span
+{
+    width: 100%;
+}
+.form1{
+	text-align: center;
+	font-size: 15pt;
+	
+	
+}
+.t1{
+	
+	position:relative;
+	top: -20px;
+	left: 50px;
+	
+}
+.t2{
+	position:relative;
+	top: -20px;
+	left: 130px;
+}
+.box1{
+	position: relative;
+	left: -35px;
+}
+.box2{
+	position: relative;
+	left: -83px;
+}
+.box3{
+	position: relative;
+	left: -83px;
+}
+
+label{
+	color:aliceblue;
+	font-size: 15pt;
+	position: relative;
+
+}
+.form2{
+	position: relative;
+	padding-left: 8%;
+}
+
+.form3{
+	position:relative;
+	text-align: center;
+	font-size: 15pt;
+}
+	
+
+.t3 {
+position:relative;
+	top: -20px;
+	left: 20px;
+}
+.t4 {
+position:relative;
+	top: -20px;
+	left: -30px;
+}
+h1{
+	padding-left: 2%;
+}

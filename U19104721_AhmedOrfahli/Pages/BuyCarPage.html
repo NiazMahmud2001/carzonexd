@@ -5,40 +5,24 @@
   <head>
     <meta charset = "utf-8">
     <title>buy car page</title>
-     <style>
-         body            { font-family: helvetica, arial, sans-serif }
-         nav             { font-weight: bold;
-                           border: 3px solid Black;
-                           text-align: left;
-                           width: 12em;
-                           background-color: grey; }
-         nav ul          { display: none;
-                           list-style: none;
-                           margin: 0;
-                           padding: 0; }
-         nav:hover ul    { display: block; }
-         nav ul li       { border-top: 4px solid RoyalBlue;
-                           background-color: white;
-                           width: 12em;
-                           color: black; }
-         nav ul li:hover
-         a               { text-decoration: none; }
-      </style>
-  </head>
+  <link href="BuyCarPage.css" rel="stylesheet" type="text/css">
+</head>
   
   <body>
-  <header>
-    <img src = "https://github.com/NiazMahmud2001/carzonexd/blob/main/logo.png?raw=true"  width = "120" height = "120" alt = "logo">
-  </header>
- 
-  <br>
-  <h1>Search</h1>
-  <br>
-   
-    
-      
-      <br>
-<br>
+  <nav>
+      <img src = "https://github.com/NiazMahmud2001/carzonexd/blob/main/logo.png?raw=true"  width = "120" height = "120" alt = "logo" class="logo">
+
+        <ul >
+            <li><a href="BuyCarPage.html">HOME</a></li>
+            <li><a href="Inventory.html">Inventory</a></li>
+			<li><a href="SellCarPage.html">Sell your car</a></li>
+            <li><a href="">CONTACT US</a></li>
+        </ul>
+    </nav>
+	  
+  <h1 style="color: aliceblue; padding-left: 3%">Search</h1>
+  <br><br><br>
+	  <div class="brlogos">
 	  <a href="../../U20201418/phase 2/porshepg1.html">
 <img src = "https://github.com/NiazMahmud2001/carzonexd/blob/main/Brand%20logos/Porsche-Logo-PNG.png?raw=true"  width = "120" height = "120" alt = "logo"></a>
 
@@ -56,14 +40,19 @@
 
 	  <a href="Tesla.html">
 <img src = "https://github.com/NiazMahmud2001/carzonexd/blob/main/Brand%20logos/Tesla-Logo.png?raw=true"  width = "120" height = "120" alt = "logo"></a>
+	  </div>
 	  
 	  <br>
-	  
-<h1>Want to sell your car ?</h1>
-	  <p>Receive the absolute best value for your trade-in vehicle. We even handle all paperwork. Get your vehicle evaluated today!</p>
-	  
-	  <a href="SellCarPage.html">
-		  <input type="button" value="Sell you car"></a><br>
+	  <div class="te">
+<h1 style="color: aliceblue">Want to sell your car ?</h1>
+	  <p style= "color: aliceblue; font-size: 15pt">Receive the absolute best value for your trade-in vehicle. We even handle all paperwork. Get your vehicle evaluated today!</p>
+	  </div>
+	  <div class="text1">
+    
+    <form action="SellCarPage.html">
+        <button>Sell Your Car </button>
+    </form>
+  </div>
 	  
 </body>
 </html>
