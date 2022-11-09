@@ -8,8 +8,17 @@
 </head>
 
 <body>
+    <div class="loader_parent" id="loader_par">
+      <!-- preloader section -->
+      <div class="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+      <h3>CarzoneXd....</h3>
+    </div>
+  </div>
  
-
     <nav>
       <img src = "https://github.com/NiazMahmud2001/carzonexd/blob/main/logo.png?raw=true"  width = "120" height = "120" alt = "logo" class="logo">
 
@@ -30,5 +39,15 @@
         <button>Sign in <span></button></span>
     </form>
   </div>
+
+  <script type="text/javascript">
+    //under js for preloader 
+    var preloader = document.getElementById('loader_par');
+    window.addEventListener("load", ()=>{
+        setTimeout(()=>{
+          preloader.style.display = "none";
+        } , 3000);
+    });
+  </script>
 </body>
 </html>
