@@ -1,55 +1,166 @@
-<html>
-<body>
-<h1>
-<center>Used Cars</center>
-</h1>
-<h2>
-Land Rover
-</h2>
-<img src = "land rover logo.jpg" width="200" height="200">
-<h2>
-Specifics
-</h2>
-<ul>
-  <li>Model</li>
-  <li>Price</li>
-  <li>Year</li>
-  <li>Mileage</li>
-</ul>
+<!DOCTYPE html>
+<html lang="en">
+<link href="Inventory.css" rel="stylesheet" type="text/css">
 
-<center><img src = "Vogue 2014.jpg" width="200" height="200"></center>
-<center><ul>
-  <li style="display:inline">Vogue</li>
-    <li style="display:inline">40,837$</li>
-    <li style="display:inline">2014</li>
-    <li style="display:inline">140 KM</li>
-    </ul>
-    </center>
-    <center>
-      <img src = "Vogue 2019 (3).jpg" width="200" height="200">
-    </center>
+	<head>
+  <style>
+  body
+{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://github.com/NiazMahmud2001/carzonexd/blob/main/4k-car-wallpaper-1.jpg?raw=true);
+    background-size: cover;
+    background-position: center;
+	background-attachment: fixed;
+}
+
+nav
+{
+    width: 85%;
+    margin: auto;
+    padding:15px 0;
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    position: relative;
+    top: -10px;
+
+}
+.logo
+{
+
+    width: 120px;
+    cursor: pointer;
+	border-radius: 20px;
+
+}
+
+nav ul li
+{
+    list-style:none ;
+    display: inline-block;
+    margin: 0 20px;
+    padding: 5px;
+    position: relative;
+}
+nav ul li a
+{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
     
-    <center>
-      <ul>
-  <li style="display:inline">Vogue</li>
-    <li style="display:inline">50,000</li>
-    <li style="display:inline">2019</li>
-    <li style="display:inline">120 KM</li>
-    </ul>
-    </center>
-    
-    <center>
-      <img src = "Vogue SE 2016 (3).jpg" width="200" height="200">
-    </center>
-    
-    <center>
-       <ul>
-  <li style="display:inline">Vogue</li>
-    <li style="display:inline">62,000</li>
-    <li style="display:inline">2016</li>
-    <li style="display:inline">160 KM</li>
-    </ul>
-    </center>
-    
+}
+
+nav ul li::after
+{
+    content: '';
+    height:3px ;
+    width: 0%;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.2s;
+}
+nav ul li:hover::after
+{
+    width: 100%;
+}
+
+.text1
+{
+    width: 100%;
+    position: aboslute;
+    top: 100px;
+    transform: translateY(-1%);
+    text-align: center;
+    color: #fff;
+
+}
+
+.text1 form button
+{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+button:hover
+{
+    border: none;
+}
+button:hover span
+{
+    width: 100%;
+}
+.brlogos{
+	text-align: center;
+}
+.te{
+	 width: 700px;
+	height: 200px;
+  padding: 20px;
+	padding-left: 5%;
+  background-color: #009688;
+  box-shadow: 6px 6px 20px 8px black;
+  font-size: 22px;
+  color: blue;
+  }
+  </style>
+    <meta charset = "utf-8">
+    <title>UsedCars</title>
+		</head>
+	
+<header>
+		<nav>
+      <img src = "https://github.com/NiazMahmud2001/carzonexd/blob/main/logo.png?raw=true"  width = "120" height = "120" alt = "logo" class="logo">
+
+        <ul >
+            <li><a href="BuyCarPage.html">HOME</a></li>
+			<li><a href="Inventory.html">Inventory</a></li>
+			<li><a href="SellCarPage.html">Sell your car</a></li>
+            <li><a href="">CONTACT US</a></li>
+        </ul>
+</nav> 
+	</header><br><br>
+<body>
+	
+	
+<img class ="carpic" src="https://github.com/NiazMahmud2001/carzonexd/blob/main/car%20pics/Range%20rover/Vogue%202014.jpg?raw=true" weight="120" height="120"  alt=""/>
+	
+<div class="carinfo">
+	<h2>Range Rover Vogue</h2>
+	<ul>
+	  <li>Mileage: 140 km</li>
+		<li>Year: 2014</li>
+		<li>Engine: Supercharged 3.0-liter V6</li>
+</ul></div>
+	
+	<img class ="carpic" src="https://github.com/NiazMahmud2001/carzonexd/blob/main/car%20pics/Range%20rover/Vogue%202019%20(3).jpg?raw=true" width="120" height="120" alt=""/>
+	<div class="carinfo">
+	<h2>Range Rover Vogue</h2>
+	<ul>
+		<li>Mileage: 120 km</li>
+		<li>Year: 2019</li>
+		<li>Engine: Supercharged 3.0-liter V-6 engine</li>
+		</ul></div>
+	<img class ="carpic" src="https://github.com/NiazMahmud2001/carzonexd/blob/main/car%20pics/Range%20rover/Vogue%20SE%202016%20(3).jpg?raw=true" weight="120" height="120" alt=""/>
+	<div class="carinfo">
+	<h2>Range Rover Vogue SE</h2>
+	<ul>
+	  <li>Mileage: 160 km</li>
+		<li>Year: 2016</li>
+		<li>Engine: 5.0-litre V8 engine </li>
+		</ul></div>
+	
 </body>
 </html>
