@@ -47,7 +47,7 @@ var searchBtn = document.querySelector(".sub_mit");
         const valueY = (event.pageY - (window.innerHeight/2));
         
         
-        console.log("valueX:" + valueX + " || valueY:"+ valueY);
+        //console.log("valueX:" + valueX + " || valueY:"+ valueY);
     })
     // window.addEventListener("wheel", ()=>{
     //     const delX = event.deltaX;
@@ -58,11 +58,29 @@ var searchBtn = document.querySelector(".sub_mit");
     $(document).ready(function(){
         $(window).scroll(function(){
             var scrollTop = $(window).scrollTop();
-            console.log("scrollTop:"+ scrollTop);
-        })
-    })
+            //console.log("scrollTop:"+ scrollTop);
+        });
+    });
 
+//working search button
+var search_but = document.querySelector(".sub_nav_search_text");
+var search_but_enter = document.querySelector(".sub_mit_svg");
 
+var search_click=0;
+search_but_enter.addEventListener("click", function(){
+    search_click++;
+    if(search_click%2 == 1){
+        search_but_enter.addEventListener("click", function(){
+            var search_value = search_but.value.toUpperCase();
+            var search_data = "#"+search_value;
+            //var search_href = document.querySelector(".search_svg_anchor").setAttribute("href", search_data);
+            //var search_get_href = document.querySelector(".search_svg_anchor").getAttribute(href);
+            //console.log("the search is :"+search_get_href);
+        });
+        search_but.value = null;
+        console.log("even click on search button");
+    };
+});
 
 
 
