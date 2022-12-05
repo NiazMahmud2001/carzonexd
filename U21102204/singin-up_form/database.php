@@ -10,7 +10,7 @@
       ?>
       <script>
          alert("connection with database successful");
-         location.replace(" https://niazmahmud2001.github.io/carzonexd/");
+         //location.replace("https://niazmahmud2001.github.io/carzonexd/U19200083/pages/accountpage.html?");
       </script>
       <?php
    }else{

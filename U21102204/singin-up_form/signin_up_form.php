@@ -16,23 +16,23 @@
       <div class="front">
         <img src="images/frontImg.jpg" alt="">
         <div class="text">
-          <span class="text-1">Every new friend is a <br> new adventure</span>
-          <span class="text-2">Let's get connected</span>
+          <span class="text-1">CarxoneXD</span>
+          <span class="text-2">Your Dream Car</span>
         </div>
       </div>
       <div class="back">
         <img class="backImg" src="images/backImg.jpg" alt="">
-        <div class="text">
+        <!-- <div class="text">
           <span class="text-1">Complete miles of journey <br> with one step</span>
           <span class="text-2">Let's get started</span>
-        </div>
+        </div> -->
       </div>
     </div>
-    <div class="forms">
+    <div class="forms"> 
         <div class="form-content">
           <div class="login-form">
             <div class="title">Login</div>
-          <form action="#">
+          <form action="../singin-up_form/sign_in.php" method="post">
             <div class="input-boxes">
               <div class="input-box">
                 <i class="fas fa-envelope"></i>
@@ -42,12 +42,16 @@
                 <i class="fas fa-lock"></i>
                 <input type="password" name="password_login" placeholder="Enter your password" required>
               </div>
+
+
               <div class="text">
                 <a href="#">Forgot password?</a>
               </div>
+
               <div class="button input-box">
-                <input type="submit" name="submit_login" value="Sumbit">
+                <input type="submit" name="submit_login" value="Submit">
               </div>
+
               <div class="text sign-up-text">Don't have an account? <label for="flip">Sigup now</label></div>
             </div>
         </form>
